@@ -11,14 +11,14 @@ describe("Login test", () => {
         cy.get(LoginPage.userForm).should("be.visible")
     })
 
-    it("login correct", () => {
+    it("Login correct", () => {
         cy.get(LoginPage.userNameField).clear().type("ntnbao")
         cy.get(LoginPage.passwordField).clear().type("b@O11223344")
         cy.get(LoginPage.loginBtn).click()
         cy.get(LoginPage.userNameLabel, {timeout: 5000}).should("be.visible")
     })
 
-    it("login incorrect", () => {
+    it("login incorrect failed", () => {
         cy.get(LoginPage.userNameField).clear().type("ntnbao")
         cy.get(LoginPage.passwordField).clear().type("b@O11223334")
         cy.get(LoginPage.loginBtn).click()
