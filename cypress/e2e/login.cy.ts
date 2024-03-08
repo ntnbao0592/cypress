@@ -7,7 +7,7 @@ describe("Login test", () => {
             // Prevent Cypress from failing the test
             return false;
         });
-        cy.visit("login")
+        cy.visit("/login")
         cy.get(LoginPage.userForm).should("be.visible")
     })
 
