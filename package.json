@@ -7,7 +7,7 @@
     "test-headless": "cypress run --headless --browser chrome --spec cypress/e2e/**",
     "test-headless2": "cypress run --browser=chrome",
     "test": "cypress open",
-    "test-api": "cypress run --headless --browser chrome --spec cypress/e2e/bookApi.cy.ts"
+    "test-api": "cypress run --browser=chrome --spec cypress/e2e/bookApi.cy.ts"
   },
   "author": "",
   "license": "ISC",
