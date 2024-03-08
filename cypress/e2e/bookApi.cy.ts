@@ -22,7 +22,7 @@ describe("tesst api", () => {
         })
     })
 
-    it("generate token", () => {
+    it("generate token by username and password", () => {
         cy.request({
             method: "POST",
             url:bookApi.generateToken,
