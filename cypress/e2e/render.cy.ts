@@ -10,7 +10,7 @@ describe("render test", () => {
         cy.get(renderPage.mainCategory).should("be.visible")
     })
 
-    it("test render", () => {
+    it("Test render", () => {
         cy.get(renderPage.mainCategory).eq(0).click()
         cy.get(renderPage.mainCategory).then(elements =>{
             for(let i: 0; i < elements.length; i++){
